@@ -129,6 +129,7 @@ public class TestDb extends AndroidTestCase {
         // we can move this code to insertLocation and then call insertLocation from both
         // tests. Why move it? We need the code to return the ID of the inserted location
         // and our testLocationTable can only return void because it's a test.
+
         long locationRowId = insertLocation();
 
         // Make sure we have a valid row ID.
@@ -232,4 +233,5 @@ public class TestDb extends AndroidTestCase {
         cursor.close();
         db.close();
         return locationRowId;
-    }}
+    }
+}
