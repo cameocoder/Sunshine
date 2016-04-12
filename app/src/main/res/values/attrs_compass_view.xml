@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CompassView">
+        <attr name="degrees" format="float" />
+    </declare-styleable>
+</resources>
